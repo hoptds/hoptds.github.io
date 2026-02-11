@@ -4,11 +4,289 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOP - Hatid Order Padala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="output.css">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-[#fdfdfd] text-black" style="font-family: 'Poppins', sans-serif;">
+  <div class="relative overflow-hidden">
+    <header class="mx-auto w-full px-2 py-2 sm:px-8 lg:px-24 lg:pb-2">
+      <div class="flex items-center justify-between">
+        <img src="assets/hop_logo.png" alt="HOP" class="h-12 w-auto lg:h-20">
+
+        <nav class="hidden items-center gap-14 text-xl font-medium lg:flex">
+          <a href="#" class="transition hover:text-[#00b4a4]">Home</a>
+          <a href="#services" class="transition hover:text-[#00b4a4]">Services</a>
+          <a href="#coverage" class="transition hover:text-[#00b4a4]">Coverage</a>
+          <a href="#help" class="transition hover:text-[#00b4a4]">Help Center</a>
+        </nav>
+
+        <button class="hidden items-center justify-center rounded-full border-[3px] p-4 border-[#007f7a] leading-none font-semibold text-[#007f7a] transition hover:opacity-90 lg:inline-flex" type="button">
+          Apply as Driver
+        </button>
+
+        <button id="open-menu" class="inline-flex size-10 items-center justify-center rounded-md lg:hidden" type="button" aria-label="Open menu">
+          <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="relative mx-auto mt-3 h-[90vh] w-full overflow-hidden px-4 pb-10 rounded-b-[30px] sm:px-8 lg:mt-0 lg:px-0 lg:pb-0 lg:rounded-b-[66px]">
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-full opacity-12">
+        <img src="https://www.figma.com/api/mcp/asset/8aff753d-8d22-40b1-b610-3ffe4b26042d" alt="" class="h-full w-full object-cover" loading="lazy">
+      </div>
+
+      <div class="absolute inset-x-0 bottom-0 h-28 bg-[#034848] lg:h-48 lg:rounded-b-[66px]"></div>
+
+      <div class="relative mx-auto flex h-full flex-col items-center pt-4 text-center lg:block lg:pt-0 lg:text-left">
+        <h1 class="mt-4 text-2xl font-semibold leading-[1.1] lg:absolute lg:left-24 lg:top-24 lg:mt-0 lg:text-5xl">Going somewhere?</h1>
+        <p class="mt-2 text-[13px] leading-[1.62] text-black lg:absolute lg:left-24 lg:top-64 lg:mt-0 lg:max-w-[520px] lg:text-xl lg:leading-[1.55]" style="color: rgba(0, 0, 0, 0.85);">
+          A next-generation Filipino ride-hailing app designed for real Filipino commuting.
+        </p>
+        <h2 class="mt-3 text-[50px] font-bold leading-[0.8] text-[#00b4a4] lg:absolute lg:left-24 lg:top-40 lg:mt-0 lg:text-[96px]">HOP NOW!</h2>
+
+        <a href="#" class="mt-4 inline-flex h-[52px] w-[180px] items-center justify-center lg:absolute lg:left-24 lg:top-[435px] lg:mt-0">
+          <img src="assets/google_play.png" alt="Get it on Google Play" class="h-full w-full object-contain">
+        </a>
+
+        <div class="relative mt-6 h-[370px] w-full lg:absolute lg:inset-auto lg:right-8 lg:top-14 lg:mt-0 lg:h-[650px] lg:w-[620px]">
+          <img src="assets/app_map.png" alt="App map" class="absolute right-[5%] top-[10%] h-[62%] rotate-[11deg] object-contain drop-shadow-[5px_13px_9.6px_rgba(0,0,0,0.25)] lg:right-6 lg:top-8 lg:h-[82%]">
+          <img src="assets/app_screen.png" alt="App screen" class="absolute right-[25%] top-[20%] h-[68%] object-contain drop-shadow-[10px_10px_7.6px_rgba(0,0,0,0.25)] lg:right-[260px] lg:top-[120px] lg:h-[85%]">
+          <img src="assets/hop_mascot.png" alt="HOP mascot" class="absolute bottom-0 left-[-12%] h-[44%] object-contain lg:bottom-0 lg:left-[-175px] lg:h-[58%]">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="mx-auto mt-6 w-full px-3 sm:px-6 lg:px-5">
+      <div class="rounded-2xl bg-[#eee] px-4 py-8 sm:px-7 lg:rounded-[29px] lg:px-16 lg:py-10">
+        <div class="mx-auto max-w-[1270px]">
+          <div class="inline-flex items-center rounded-[66px] border border-[#007f7a] bg-white p-5 text-[11px] text-[#f5f5f5] lg:text-base">
+            <span class="text-[#00b4a4]">About Us</span>
+            <span class="mx-1 text-black">|</span>
+            <span class="text-black">Improve the lives of the locals</span>
+          </div>
+
+          <div class="mt-4 text-center lg:mt-6 lg:flex lg:items-start lg:justify-between lg:text-left">
+            <h3 class="mx-auto max-w-[660px] text-4xl font-medium leading-[1.25] lg:mx-0 lg:text-[64px] lg:leading-[1.2]">Designed for the pace of the city.</h3>
+            <div class="mx-auto mt-4 max-w-[520px] lg:mx-0 lg:mt-0 lg:pl-6">
+              <p class="text-[13px] font-light leading-[1.4] lg:text-2xl lg:leading-[1.3]">
+                HOP’s purpose is to simplify and improve the everyday commuting lives of the locals. Learn more about our purpose, people, and services.
+              </p>
+              <button class="mt-4 rounded-[66px] border border-[#076B6B] bg-[#076B6B] px-5 py-3 text-sm text-[#f5f5f5] lg:mt-6 lg:text-base" type="button">
+                More about us &gt;
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-8 flex items-center gap-3 lg:mt-10">
+            <span class="h-[2px] flex-1 bg-[#00b4a4]"></span>
+            <h4 class="text-2xl font-bold text-[#00b4a4] lg:text-[40px]">Services</h4>
+            <span class="h-[2px] flex-1 bg-[#00b4a4]"></span>
+          </div>
+
+          <div class="mt-7 grid grid-cols-1 gap-6 lg:mt-8 lg:grid-cols-3 lg:gap-6">
+            <article class="rounded-[27px] border border-[#bebebe] bg-[#eee] px-6 py-10 text-center">
+              <div class="mx-auto flex size-[85px] items-center justify-center rounded-full bg-[rgba(6,148,148,0.2)] lg:size-[115px]">
+                <img src="assets/motorcycle.png" alt="Motorcycle" class="h-[82%] w-[82%] object-contain">
+              </div>
+              <h5 class="mt-5 text-[28px] font-semibold text-[#565656] lg:text-[32px]">Motorcycle</h5>
+              <p class="mt-1 text-[15px] text-[#494949] lg:text-xl">Fast rides for everyday trips.</p>
+            </article>
+
+            <article class="rounded-[27px] border-[3px] border-[#00b4a4] bg-white px-6 py-10 text-center shadow-[0_4px_12.2px_3px_rgba(0,0,0,0.25)]">
+              <div class="mx-auto flex size-[85px] items-center justify-center rounded-full border-2 border-[#00b4a4] bg-[rgba(6,148,148,0.2)] lg:size-[115px]">
+                <img src="assets/tricycle.png" alt="Tricycle" class="h-[82%] w-[82%] object-cover">
+              </div>
+              <h5 class="mt-5 text-[28px] font-semibold lg:text-[32px]">Tricycle</h5>
+              <p class="mt-1 text-[15px] lg:text-xl">Easy access for local trips.</p>
+            </article>
+
+            <article class="rounded-[27px] border border-[#bebebe] bg-[#eee] px-6 py-10 text-center">
+              <div class="mx-auto flex size-[85px] items-center justify-center rounded-full bg-[rgba(6,148,148,0.2)] lg:size-[115px]">
+                <img src="assets/food_delivery.png" alt="Food Delivery" class="h-[65%] w-[65%] object-contain">
+              </div>
+              <h5 class="mt-5 text-[28px] font-semibold text-[#565656] lg:text-[32px]">Food Delivery</h5>
+              <p class="mt-1 text-[15px] text-[#494949] lg:text-xl">Your cravings, delivered hot.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative mx-auto mt-6 w-full max-w-[1440px] overflow-hidden px-4 pb-2 pt-4 sm:px-8 lg:mt-10 lg:h-[1400px] lg:px-0 lg:pt-8">
+      <div class="pointer-events-none absolute inset-0 opacity-60">
+        <img src="assets/background_design.svg" alt="" class="h-full w-full object-cover" loading="lazy">
+      </div>
+
+      <div class="relative text-center">
+        <p class="text-2xl font-medium lg:inline-block lg:text-[64px]">Why choose</p>
+        <p class="text-[96px] font-bold leading-none text-[#00b4a4] lg:ml-3 lg:inline-block lg:text-[128px]">HOP?</p>
+        <p class="mx-auto mt-2 max-w-[640px] text-[13px] lg:mt-3 lg:text-xl">Everything you need to move-fast, safe, and stress-free.</p>
+        <button class="mt-4 rounded-[66px] border border-[#076b6b] bg-[#076b6b] px-7 py-5 font-semibold text-[#f5f5f5]" type="button">Download Now</button>
+      </div>
+
+      <div class="relative mx-auto mt-8 grid max-w-[1390px] grid-cols-1 gap-8 lg:mt-8 lg:grid-cols-[1fr_489px_1fr]">
+        <div class="space-y-8 lg:space-y-10">
+          <article class="rounded-[27px] border border-[#bbb] bg-white p-6 shadow-[0_2px_22.5px_-6px_rgba(0,0,0,0.25)] lg:h-[359px]">
+            <p class="text-2xl font-semibold text-[#076b6b] lg:text-5xl">01</p>
+            <h5 class="mt-3 text-2xl font-medium leading-tight lg:text-[30px]">Reliable rides, even during peak hours.</h5>
+            <p class="mt-3 text-[13px] leading-6 lg:text-xl lg:leading-[31px]">Get matched with available drivers faster-whether it’s rush hour, heavy rain, or city events.</p>
+          </article>
+
+          <article class="rounded-[27px] border border-[#bbb] bg-white p-6 shadow-[0_2px_22.5px_-6px_rgba(0,0,0,0.25)] lg:h-[359px]">
+            <p class="text-2xl font-semibold text-[#076b6b] lg:text-5xl">03</p>
+            <h5 class="mt-3 text-2xl font-medium leading-tight lg:text-[30px]">More than just rides.</h5>
+            <p class="mt-3 text-[13px] leading-6 lg:text-xl lg:leading-[31px]">Book motorcycle or tricycle trips, send packages, or order food-all in one app.</p>
+          </article>
+        </div>
+
+        <div class="pointer-events-none hidden justify-center lg:flex">
+          <img src="assets/hop_application.png" alt="In-app map and tracking" class="h-[963px] w-[489px] object-cover">
+        </div>
+
+        <div class="space-y-8 lg:space-y-10">
+          <article class="rounded-[27px] border border-[#bbb] bg-white p-6 shadow-[0_2px_22.5px_-6px_rgba(0,0,0,0.25)] lg:h-[359px]">
+            <p class="text-2xl font-semibold text-[#076b6b] lg:text-5xl">02</p>
+            <h5 class="mt-3 text-2xl font-medium leading-tight lg:text-[30px]">Easy access, anywhere you are.</h5>
+            <p class="mt-3 text-[13px] leading-6 lg:text-xl lg:leading-[31px]">From main roads to inner barangays, HOP connects you with vehicles willing to reach you.</p>
+          </article>
+
+          <article class="rounded-[27px] border border-[#bbb] bg-white p-6 shadow-[0_2px_22.5px_-6px_rgba(0,0,0,0.25)] lg:h-[359px]">
+            <p class="text-2xl font-semibold text-[#076b6b] lg:text-5xl">04</p>
+            <h5 class="mt-3 text-2xl font-medium leading-tight lg:text-[30px]">Simple, transparent pricing.</h5>
+            <p class="mt-3 text-[13px] leading-6 lg:text-xl lg:leading-[31px]">Know your fare upfront with no hidden charges or last-minute surprises.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="coverage" class="mx-auto mt-7 w-full overflow-hidden px-0 lg:mt-0">
+      <div class="relative rounded-t-[20px] bg-[linear-gradient(122.5deg,#0b1d1d_0.68%,#00b4a4_116.19%)] px-6 py-10 lg:min-h-[841px] lg:rounded-t-[29px] lg:px-24 lg:py-28">
+        <button class="rounded-[66px] border border-[#076b6b] bg-[#076b6b] px-11 py-5 text-base text-[#f5f5f5]" type="button">Area of Coverage</button>
+
+        <div class="mt-8 grid grid-cols-1 items-start gap-8 lg:mt-10 lg:grid-cols-[430px_1fr] lg:gap-14">
+          <div>
+            <h3 class="text-[40px] font-medium leading-[1.14] text-white lg:text-[64px] lg:leading-[1.2]">
+              Where <span class="text-[#00b4a4]">HOP</span> Is Available.
+            </h3>
+            <p class="mt-5 text-[13px] leading-[1.46] text-white lg:text-2xl lg:leading-[31px]">
+              We’re currently operating in select areas, bringing reliable rides and deliveries closer to you.
+            </p>
+            <button class="mt-7 rounded-[66px] border border-[#001b1b] bg-[#001b1b] px-15 py-6 font-bold text-[#f5f5f5] lg:mt-12" type="button">Learn More</button>
+          </div>
+
+          <div class="relative overflow-hidden rounded-[20px]">
+            <img src="assets/coverage_map.png" alt="Coverage map" class="h-[317px] w-full rounded-[20px] object-cover lg:h-[595px]">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="help" class="mx-auto mt-0 w-full bg-[#001b1b]">
+      <div class="px-8 pb-16 pt-10 lg:px-16 lg:pb-20 lg:pt-12">
+        <div class="grid gap-10 lg:grid-cols-[280px_210px_320px_240px] lg:gap-40">
+          <div class="flex flex-col items-center">
+            <img src="assets/hop_logo.png" alt="HOP" class="h-20 w-auto object-contain">
+            <p class="mt-3 text-[13px] text-white lg:text-xl">Hatid. Order. Padala.</p>
+            <div class="mt-5 flex items-center gap-4">
+              <img src="assets/facebook.png" alt="Facebook" class="size-11 lg:size-12">
+              <img src="assets/x.png" alt="X" class="size-11 lg:size-12">
+              <img src="assets/instagram.png" alt="Instagram" class="size-11 lg:size-12">
+              <img src="assets/youtube.png" alt="YouTube" class="size-11 lg:size-12">
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-[32px] font-bold text-[#03d4c2]">Company</h4>
+            <ul class="mt-2 space-y-2 text-2xl font-medium text-white">
+              <li><a href="#" class="transition hover:text-[#00b4a4]">About</a></li>
+              <li><a href="#" class="transition hover:text-[#00b4a4]">Career</a></li>
+              <li><a href="#" class="transition hover:text-[#00b4a4]">Help Center</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-[32px] font-bold text-[#03d4c2]">Contact Us</h4>
+            <ul class="mt-2 space-y-4 text-xl text-white">
+              <li class="flex items-start gap-2">
+                <img src="assets/ic_baseline-email.png" alt="Email" class="mt-1 size-6">
+                <span>hopdelivery@gmail.com</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <img src="assets/ic_baseline-call.png" alt="Phone" class="mt-1 size-6">
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <img src="assets/gridicons_location.png" alt="Location" class="mt-1 size-6">
+                <span>123 Pet Street, Animal City, AC 12345</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-[32px] font-bold text-[#03d4c2]">Information</h4>
+            <ul class="mt-2 space-y-2 text-2xl font-medium text-white">
+              <li><a href="#" class="transition hover:text-[#00b4a4]">Privacy Policy</a></li>
+              <li><a href="#" class="transition hover:text-[#00b4a4]">Terms of Use</a></li>
+              <li><a href="#" class="transition hover:text-[#00b4a4]">Code of Conduct</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-between gap-2 bg-black px-6 py-6 text-center text-sm text-white lg:flex-row lg:px-14 lg:text-xl">
+        <p>ALL RIGHTS RESERVED.</p>
+        <p>HOP PH © 2026</p>
+      </div>
+    </footer>
+  </div>
+
+  <div id="offcanvas" class="pointer-events-none fixed inset-0 z-50 opacity-0 transition duration-300 lg:hidden" aria-hidden="true">
+    <div id="offcanvas-backdrop" class="absolute inset-0 bg-black/25"></div>
+    <div class="absolute inset-0 bg-[rgba(33,33,33,0.97)] p-8">
+      <button id="close-menu" class="absolute right-6 top-6 inline-flex size-10 items-center justify-center rounded-md text-white" type="button" aria-label="Close menu">
+        <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="mt-10 space-y-8 text-[50px] leading-none text-white">
+        <a href="#" class="block text-[34px]">Home</a>
+        <a href="#services" class="block text-[34px]">Services</a>
+        <a href="#coverage" class="block text-[34px]">Coverage</a>
+        <a href="#help" class="block text-[34px]">Help Center</a>
+      </nav>
+
+      <button class="absolute bottom-8 left-8 right-8 rounded-[44px] bg-[#11b2a5] px-8 py-4 text-[40px] font-semibold leading-none text-white" type="button">
+        Apply as Driver
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const offcanvas = document.getElementById('offcanvas');
+    const openMenu = document.getElementById('open-menu');
+    const closeMenu = document.getElementById('close-menu');
+    const backdrop = document.getElementById('offcanvas-backdrop');
+
+    function showMenu() {
+      offcanvas.classList.remove('pointer-events-none', 'opacity-0');
+      offcanvas.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function hideMenu() {
+      offcanvas.classList.add('pointer-events-none', 'opacity-0');
+      offcanvas.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    openMenu?.addEventListener('click', showMenu);
+    closeMenu?.addEventListener('click', hideMenu);
+    backdrop?.addEventListener('click', hideMenu);
+  </script>
 </body>
 </html>
