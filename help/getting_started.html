@@ -7,22 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@700&display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="output.css" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../output.css" />
   </head>
   <body class="bg-[#fdfdfd] text-black" style="font-family: &quot;Poppins&quot;, sans-serif">
     <div class="relative overflow-hidden">
-      <div class="absolute -top-170 inset-0 -z-10 bg-[url('assets/background_city.jpeg')] bg-cover bg-center opacity-10"></div>
+      <div class="absolute inset-0 -top-170 -z-10 bg-[url('../assets/background_city.jpeg')] bg-cover bg-center opacity-10"></div>
 
       <header class="mx-auto w-full px-2 py-2 sm:px-8 lg:px-24 lg:pb-2">
         <div class="flex items-center justify-between">
-          <img src="assets/hop_logo.png" alt="HOP" class="h-12 w-auto lg:h-20" />
+          <a href="../index.html"><img src="../assets/hop_logo.png" alt="HOP" class="h-12 w-auto lg:h-20" /></a>
 
           <nav class="hidden items-center gap-14 text-xl font-medium lg:flex">
-            <a href="#" class="transition hover:text-[#00b4a4]">Home</a>
+            <a href="../index.html" class="transition hover:text-[#00b4a4]">Home</a>
             <a href="#services" class="transition hover:text-[#00b4a4]">Services</a>
             <a href="#coverage" class="transition hover:text-[#00b4a4]">Coverage</a>
-            <a href="help.html" class="transition hover:text-[#00b4a4]">Help Center</a>
+            <a href="getting_started.html" class="transition hover:text-[#00b4a4]">Help Center</a>
           </nav>
 
           <button class="hidden cursor-pointer items-center justify-center rounded-full border-[3px] border-[#007f7a] p-4 leading-none font-semibold text-[#007f7a] transition hover:opacity-90 lg:inline-flex" type="button">Apply as Driver</button>
@@ -59,42 +59,56 @@
           </h2>
 
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
-              <img src="assets/icons/flag_svgrepo.com.png" alt="Getting Started" class="mx-auto size-21">
-              <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Getting Started</h3>
-            </article>
+            <a href="#">
+              <article class="rounded-[19px] border-2 border-[#008a8a] bg-white p-8 text-center shadow-[0_4px_29.4px_2px_rgba(0,0,0,0.25)]">
+                <img src="../assets/icons/flag_svgrepo.com.png" alt="Getting Started" class="mx-auto size-21" />
+                <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Getting Started</h3>
+              </article>
+            </a>
 
-            <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
-              <img src="assets/icons/motorcycle-2_svgrepo.com.png" alt="Transport" class="mx-auto size-21">
-              <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Transport</h3>
-            </article>
+            <a href="transport.html">
+              <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
+                <img src="../assets/icons/motorcycle-2_svgrepo.com.png" alt="Transport" class="mx-auto size-21" />
+                <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Transport</h3>
+              </article>
+            </a>
 
-            <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
-              <img src="assets/icons/safety-certificate_svgrepo.com.png" alt="Safety" class="mx-auto size-21">
-              <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Safety</h3>
-            </article>
+            <a href="safety.html">
+              <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
+                <img src="../assets/icons/safety-certificate_svgrepo.com.png" alt="Safety" class="mx-auto size-21" />
+                <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Safety</h3>
+              </article>
+            </a>
 
-            <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
-              <img src="assets/icons/payment_svgrepo.com.png" alt="Payments & Offers" class="mx-auto size-21">
-              <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Payments &amp; Offers</h3>
-            </article>
+            <a href="payments_and_offers.html">
+              <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
+                <img src="../assets/icons/payment_svgrepo.com.png" alt="Payments & Offers" class="mx-auto size-21" />
+                <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Payments &amp; Offers</h3>
+              </article>
+            </a>
           </div>
 
           <div class="mx-auto mt-6 grid max-w-245 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
-              <img src="assets/icons/error_svgrepo.com.png" alt="App Issues" class="mx-auto size-21">
-              <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">App Issues</h3>
-            </article>
+            <a href="app_issues.html">
+              <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
+                <img src="../assets/icons/error_svgrepo.com.png" alt="App Issues" class="mx-auto size-21" />
+                <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">App Issues</h3>
+              </article>
+            </a>
 
-            <article class="rounded-[19px] border-2 border-[#008a8a] bg-white p-8 text-center shadow-[0_4px_29.4px_2px_rgba(0,0,0,0.25)]">
-              <img src="assets/icons/steering-wheel_svgrepo.com.png" alt="Driver Partner" class="mx-auto size-21">
-              <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Driver Partner</h3>
-            </article>
+            <a href="driver_partner.html">
+              <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)]">
+                <img src="../assets/icons/steering-wheel_svgrepo.com.png" alt="Driver Partner" class="mx-auto size-21" />
+                <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Driver Partner</h3>
+              </article>
+            </a>
 
-            <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)] sm:col-span-2 lg:col-span-1">
-              <img src="assets/icons/megaphone_svgrepo.com.png" alt="Report" class="mx-auto size-21">
-              <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Report</h3>
-            </article>
+            <a href="report.html">
+              <article class="rounded-[19px] bg-[#f3f3f3] p-8 text-center shadow-[0_4px_29.4px_-2px_rgba(0,0,0,0.25)] sm:col-span-2 lg:col-span-1">
+                <img src="../assets/icons/megaphone_svgrepo.com.png" alt="Report" class="mx-auto size-21" />
+                <h3 class="mt-5 text-[20px] leading-tight font-semibold text-[#2c2c2c]">Report</h3>
+              </article>
+            </a>
           </div>
         </section>
 
@@ -217,13 +231,13 @@
         <div class="px-8 pt-10 pb-16 lg:px-16 lg:pt-12 lg:pb-20">
           <div class="grid w-full gap-10 sm:grid-cols-2 lg:grid-cols-4">
             <div class="flex flex-col items-center">
-              <img src="assets/hop_logo.png" alt="HOP" class="h-20 w-auto object-contain" />
+              <img src="../assets/hop_logo.png" alt="HOP" class="h-20 w-auto object-contain" />
               <p class="mt-3 text-[13px] text-white lg:text-xl">Hatid. Order. Padala.</p>
               <div class="mt-5 flex items-center gap-4">
-                <a href="#"><img src="assets/facebook.png" alt="Facebook" class="size-11 lg:size-12" /></a>
-                <a href="#"><img src="assets/x.png" alt="X" class="size-11 lg:size-12" /></a>
-                <a href="#"><img src="assets/instagram.png" alt="Instagram" class="size-11 lg:size-12" /></a>
-                <a href="#"><img src="assets/youtube.png" alt="YouTube" class="size-11 lg:size-12" /></a>
+                <a href="#"><img src="../assets/facebook.png" alt="Facebook" class="size-11 lg:size-12" /></a>
+                <a href="#"><img src="../assets/x.png" alt="X" class="size-11 lg:size-12" /></a>
+                <a href="#"><img src="../assets/instagram.png" alt="Instagram" class="size-11 lg:size-12" /></a>
+                <a href="#"><img src="../assets/youtube.png" alt="YouTube" class="size-11 lg:size-12" /></a>
               </div>
             </div>
 
@@ -246,15 +260,15 @@
               <h4 class="text-[32px] font-bold text-[#03d4c2]">Contact Us</h4>
               <ul class="mt-2 space-y-4 text-xl text-white">
                 <li class="flex items-start gap-2">
-                  <img src="assets/ic_baseline-email.png" alt="Email" class="mt-1 size-6" />
+                  <img src="../assets/ic_baseline-email.png" alt="Email" class="mt-1 size-6" />
                   <span>hopdelivery@gmail.com</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <img src="assets/ic_baseline-call.png" alt="Phone" class="mt-1 size-6" />
+                  <img src="../assets/ic_baseline-call.png" alt="Phone" class="mt-1 size-6" />
                   <span>+1 (555) 123-4567</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <img src="assets/gridicons_location.png" alt="Location" class="mt-1 size-6" />
+                  <img src="../assets/gridicons_location.png" alt="Location" class="mt-1 size-6" />
                   <span>123 Pet Street, Animal City, AC 12345</span>
                 </li>
               </ul>
@@ -264,13 +278,13 @@
               <h4 class="text-[32px] font-bold text-[#03d4c2]">Information</h4>
               <ul class="mt-2 space-y-2 text-2xl font-medium text-white">
                 <li>
-                  <a href="#" class="transition hover:text-[#00b4a4]">Privacy Policy</a>
+                  <a href="../privacy_policy.html" class="transition hover:text-[#00b4a4]">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#" class="transition hover:text-[#00b4a4]">Terms of Use</a>
+                  <a href="../terms_and_agreements.html" class="transition hover:text-[#00b4a4]">Terms of Use</a>
                 </li>
                 <li>
-                  <a href="#" class="transition hover:text-[#00b4a4]">Code of Conduct</a>
+                  <a href="../code_of_conduct.html" class="transition hover:text-[#00b4a4]">Code of Conduct</a>
                 </li>
               </ul>
             </div>
@@ -304,6 +318,6 @@
       </div>
     </div>
 
-    <script src="assets/js/help.js"></script>
+    <script src="../assets/js/help.js"></script>
   </body>
 </html>
