@@ -9,10 +9,8 @@ function openOffcanvas() {
 }
 
 function closeOffcanvas() {
-  // 1) restore focus BEFORE hiding from AT
   openBtn.focus();
 
-  // 2) now hide
   offcanvas.classList.add("pointer-events-none", "opacity-0");
   offcanvas.setAttribute("aria-hidden", "true");
 }
